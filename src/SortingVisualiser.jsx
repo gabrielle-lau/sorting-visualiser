@@ -167,7 +167,6 @@ class SortingVisualiser extends React.Component{
     }
 
     render(){
-        var disableLink = false;
         return(
             <Container fluid>
                 <Row>
