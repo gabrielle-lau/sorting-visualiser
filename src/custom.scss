@@ -1,0 +1,107 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+// Override default variables before the import
+
+$font-family-sans-serif: 'Questrial', sans-serif;
+
+$aqua-color: rgb(52, 230, 170);
+
+$margin-nav: 20px;
+
+$theme-colors: (
+  "primary": $aqua-color,
+);
+
+$custom-checkbox-indicator-indeterminate-bg: $aqua-color;
+
+// Override Bootstrap classes before import 
+.btn{
+    &:focus, &:active{
+        outline: none !important;
+        box-shadow: none !important;        
+    }
+    &:hover{
+        color: white!important;        
+    }
+
+    margin-left: $margin-nav;
+    margin-right: $margin-nav;
+}
+
+.navbar-toggler{
+    &:focus, &:active{
+        outline: none !important;
+        box-shadow: none !important;        
+    } 
+}
+
+.nav-btn{
+    transition: all 0.5s ease !important;
+    background-color: Transparent;
+    color: white !important;
+    // font-size: 1.1em !important;
+    font-weight: bold !important;
+    &:hover{
+        color:  $aqua-color !important;            
+    }
+    &:focus, &:active{   
+        color:  $aqua-color !important;    
+    }
+}
+
+.array-bar{
+    margin: 1px; 
+    display: inline-block;
+    margin-top: auto;
+}
+
+.array-container{
+    text-align: center;
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.cn-align{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    margin: auto;
+}
+
+.card-size{
+    margin-top: 5vh;
+    width: 80%;
+    min-height: 20vh;
+    text-align: center;
+}
+
+.full-width{
+    width: 100%
+}
+
+@mixin thumb() { 
+    /* common styles */ 
+    background: $aqua-color !important;
+    color: $aqua-color !important;
+    border: $aqua-color !important;
+}
+
+input {
+  &::-webkit-slider-thumb { @include thumb }
+  &::-moz-range-thumb { @include thumb }
+  &::-ms-thumb { @include thumb }
+}
+
+
+// Import Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";
+
