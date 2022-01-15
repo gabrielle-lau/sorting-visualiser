@@ -1,5 +1,7 @@
 ## Sorting Visualiser 
 
+Visualise how heap sort, merge sort and insertion sort algorithms work by interacting with a customisable animation on this app!
+
 Navigate to the web app: 
 https://gabrielle-lau.github.io/sorting-visualiser/
 
